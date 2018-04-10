@@ -25,10 +25,11 @@ public class Solution {
 
     private boolean isValid(int[] cols, int row, int col) {
         for (int i = 0; i < row; i++) {
+            //不能同一列
             if (cols[i] == col) {
                 return false;
             }
-            
+            //不能同一对角线，横坐标之差和纵坐标之差是不是相等
             if ((row - i) == Math.abs(col - cols[i])) {
                 return false;
             }

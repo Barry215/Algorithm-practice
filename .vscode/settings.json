@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "iterator": "cpp",
+        "vector": "cpp",
+        "__bit_reference": "cpp",
+        "algorithm": "cpp",
+        "string": "cpp",
+        "__tuple": "cpp",
+        "locale": "cpp",
+        "ostream": "cpp"
+    },
+    "python.formatting.provider": "yapf",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "C_Cpp.errorSquiggles": "Disabled"
+}

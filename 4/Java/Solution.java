@@ -1,6 +1,6 @@
 
 public class Solution {
-    public int findMaxSumOfrray(int[] array) {
+    public int findMaxSumOfSubArray(int[] array) {
         if (array == null) {
             return 0;
         }
@@ -8,13 +8,13 @@ public class Solution {
         int tempsum = array[0];
         for (int i = 1; i < array.length; i++) {
             tempsum = Math.max(tempsum + array[i], array[i]);
-            sum = Math.max(tempsum, res);
+            sum = Math.max(tempsum, sum);
         }
         return sum;
     }
 
     public static void main(String[] args) {
         int[] array = {1,-2,3,10,-4,7,2,-5};
-        System.out.println(new Solution().findMaxSumOfrray(array));
+        System.out.println(new Solution().findMaxSumOfSubArray(array));
     }
 }
